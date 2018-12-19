@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>留言板</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+        .form {
+            /*margin-top: 30%;*/
+            padding: 10% 0;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+
+        }
+
+        input{
+            width: 300px;
+            height: 50px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        textarea{
+            width: 300px;
+            font-size: 18px;
+
+        }
+        button {
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+    </style>
 </head>
 <body>
-    <form action="">
-       姓 名 ： <input type="text" name="name" dataformatas="请输入姓名"> <br>
-       留言： <input type="text" name="content" dataformatas="请输入您的留言"> <br>
+
+<div class="form">
+    <form action="./liuyanban.php" method="post">
+        姓 名 ：
+        <br>
+        <input type="text" name="name" dataformatas="请输入姓名"> <br>
+        手 机 ：
+        <br>
+        <input type="number" name="iphone" dataformatas="请输入手机号码"> <br>
+        留 言 ： <br>
+        <textarea name="content" id="" cols="50" rows="10"  dataformatas="请输入您的留言"></textarea><br>
         <button type="submit">提交</button>
     </form>
+</div>
+
 </body>
 </html>
